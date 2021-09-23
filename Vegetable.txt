@@ -1,0 +1,33 @@
+class Vegetable{
+    String nama = "";
+    int jumlah = 6;
+    double weight = 0.6;
+
+    Vegetable(this.nama, this.jumlah, this. weight);
+
+    void khasiat(){
+      print('$nama adalah sayuran yang bervitamin');
+    }
+
+    String makan(){
+      return ('$nama dapat memberikan kesehatan yang baik');
+    }
+}
+
+main(List<String> args){
+      Vegetable sayurSatu =  Vegetable ("Bayam", 6, 0.6);
+      Vegetable sayurDua =  Vegetable ("Kangkung", 6, 1.6);
+  
+      for(var i = 0; i< 1; i++){
+        sayurSatu.khasiat();
+      }
+      print(sayurSatu.nama + ' adalah tumbuh2an yang mengandung banyak manfaat ' +  sayurSatu.nama + ' ' + ' dan bergizi');
+      print(sayurSatu.makan());
+      print(" ========================================================= ");
+      
+      for(var i = 0; i< 1; i++){
+        sayurDua.khasiat();
+      }
+      print(sayurDua.nama + ' adalah tumbuh2an yang mengandung banyak manfaat ' +  sayurDua.nama + ' ' + ' dan bergizi');
+      print(sayurDua.makan());
+}
